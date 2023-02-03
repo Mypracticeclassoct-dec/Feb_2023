@@ -113,7 +113,8 @@ resource "aws_instance" "febec2"{
       "sudo apt install unzip wget -y",
       "sudo apt install software-properties-common && / sudo add-apt-repository --yes --update ppa:ansible/ansible && /sudo apt install ansible -y",
        "whoami",
-       "sudo echo "localhost" > inventory ",
+       "sudo touch inventory",
+       "sudo echo'localhost' > inventory "
 
     ]
     
